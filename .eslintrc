@@ -1,0 +1,87 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier", "react-hooks"],
+  "globals": {
+    "window": true,
+    "document": true
+  },
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-unused-vars": "warn",
+    "one-var": "off",
+    "no-plusplus": "off",
+    "one-var-declaration-per-line": "off",
+    "function-paren-newline": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "react/forbid-prop-types": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/jsx-filename-extension": [0],
+    "react/jsx-wrap-multilines": [
+      "error",
+      { "arrow": true, "return": true, "declaration": true }
+    ],
+    "react/sort-comp": ["error",  {"order": [
+      "constructor",
+      "state",
+      "static-methods",
+      "everything-else",
+      "lifecycle",
+      "render"
+    ],
+      "groups": {
+        "lifecycle": [
+          "displayName",
+          "propTypes",
+          "contextTypes",
+          "childContextTypes",
+          "mixins",
+          "statics",
+          "defaultProps",
+          "constructor",
+          "getDefaultProps",
+          "state",
+          "getInitialState",
+          "getChildContext",
+          "getDerivedStateFromProps",
+          "componentWillMount",
+          "UNSAFE_componentWillMount",
+          "componentDidMount",
+          "componentWillReceiveProps",
+          "UNSAFE_componentWillReceiveProps",
+          "shouldComponentUpdate",
+          "componentWillUpdate",
+          "UNSAFE_componentWillUpdate",
+          "getSnapshotBeforeUpdate",
+          "componentDidUpdate",
+          "componentDidCatch",
+          "componentWillUnmount"
+        ]
+      }
+      }],
+    "import/no-named-as-default": "off",
+    "import/prefer-default-export": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "func-names": ["error", "always", { "generators": "never" }],
+    "max-len": [
+      1,
+      180,
+      2,
+      {
+        "ignoreComments": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "object-curly-newline": [
+      "off",
+      {
+        "ObjectExpression": "always",
+        "ObjectPattern": {
+          "minProperties": 2
+        }
+      }
+    ]
+  }
+}
