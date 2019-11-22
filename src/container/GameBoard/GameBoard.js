@@ -8,6 +8,7 @@ import { layoutSelector } from "../../store/selectors";
 import { setEmojiLayout } from "../../store/actions/actionCreators";
 import { getCorrectId } from "../../helpers/getCorrectId";
 import { generateInitialArr, shuffle } from "../../helpers/generateNewData";
+import Win from "../../components/Win";
 
 class GameBoard extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class GameBoard extends Component {
     };
   }
 
-  compareImgs = () => {
+  compareImages = () => {
     const { correctMatches } = this.state;
     let { firstSelectedItem, secondSelectedItem } = this.state;
     firstSelectedItem = getCorrectId(firstSelectedItem);
@@ -46,7 +47,7 @@ class GameBoard extends Component {
       this.setState({
         secondSelectedItem: id,
         timeOutId: setTimeout(() => {
-          this.compareImgs();
+          this.compareImages();
         }, 1000)
       });
     }
@@ -83,11 +84,8 @@ class GameBoard extends Component {
 
     return (
       <Fragment>
-        <button type="button" className="shuffle-button" onClick={this.startNewGame}>
-          New Game
-        </button>
         <div className="game-board">
-          {layout.size !== correctMatches.size ? (
+          {layout.size !== correctMatches.size * 2 ? (
             layout.map(item => (
               <Cube
                 correctMatches={correctMatches}
@@ -99,9 +97,12 @@ class GameBoard extends Component {
               />
             ))
           ) : (
-            <p>Horraaaa !!! You won</p>
+            <Win />
           )}
         </div>
+        <button type="button" className="game-button" onClick={this.startNewGame}>
+          New Game
+        </button>
       </Fragment>
     );
   }

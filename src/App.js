@@ -1,12 +1,16 @@
-import React from "react";
-import GameBoard from "./container/GameBoard";
+import React, { lazy, Suspense } from "react";
 import "./App.scss";
+import Spinner from "./components/Spinner";
+
+const GameBoard = lazy(() => import("./container/GameBoard"));
 
 function App() {
   return (
     <div className="App">
       <div className="App-body">
-        <GameBoard />
+        <Suspense fallback={<Spinner />}>
+          <GameBoard />
+        </Suspense>
       </div>
     </div>
   );

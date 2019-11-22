@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./index.scss";
-import {getCorrectId} from "../../helpers/getCorrectId";
+import { getCorrectId } from "../../helpers/getCorrectId";
 
 const Cube = ({ item, firstSelectedItem, secondSelectedItem, handleClick, correctMatches }) => {
   const id = item.get("id");

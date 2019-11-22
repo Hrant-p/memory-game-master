@@ -4,6 +4,21 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  //grid-gap: 0.5px;
-  border: 1px solid green;
+}
+.game-button {
+  position: absolute;
+  left: 45%;
+  width: 60px;
+  margin:  25px 25px 0 25px;
+  border-radius: 5px;
+  border: none;
+  color: #4e81e2;
+  background-color: lightcoral;
+  padding: 5px;
+  transition: 0.5s;
+  &:hover {
+    color: antiquewhite;
+    background-color: #191919;
+    cursor: pointer;
+  }
 }
