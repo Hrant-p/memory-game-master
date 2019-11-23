@@ -1,13 +1,16 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom";
-import "./index.scss";
 import { Provider } from "react-redux";
-import App from "./App";
 import store from "./store/store";
+import Spinner from "./components/Spinner";
+
+const App = lazy(() => import("./App"));
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Suspense fallback={<Spinner />}>
+      <App />
+    </Suspense>
   </Provider>,
   document.getElementById("root")
 );

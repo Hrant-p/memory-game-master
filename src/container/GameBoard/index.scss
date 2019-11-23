@@ -5,20 +5,24 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+
 .game-button {
   position: absolute;
   left: 45%;
   width: 60px;
-  margin:  25px 25px 0 25px;
+  margin: 25px 25px 0 25px;
   border-radius: 5px;
   border: none;
-  color: #4e81e2;
-  background-color: lightcoral;
+  color: whitesmoke;
+  background-color: #1800f0;
   padding: 5px;
-  transition: 0.5s;
+  transition: 0.5s ease-out;
+  box-shadow: 1px 1px 1px black;
+  font-size: small;
   &:hover {
-    color: antiquewhite;
+    color: rgba(157, 255, 11, 0.47);
     background-color: #191919;
     cursor: pointer;
+    transform: scale(1.3);
   }
 }

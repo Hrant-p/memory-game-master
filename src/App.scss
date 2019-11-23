@@ -1,11 +1,19 @@
-.App {
-  height: 800px;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  .App-body {
-    width: 600px;
-    height: 600px;
-    margin-top: 25px;
-  }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    .App {
+      height: 800px;
+      display: flex;
+      justify-content: center;
+      background: radial-gradient(#e66465, #9198e5);
+      .App-body {
+        width: 600px;
+        height: 600px;
+        margin-top: 25px;
+      }
+    }
 }
