@@ -5,15 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    .App {
-      height: 800px;
-      display: flex;
-      justify-content: center;
-      background: radial-gradient(#e66465, #9198e5);
-      .App-body {
-        width: 600px;
-        height: 600px;
-        margin-top: 25px;
-      }
+  .App {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(#e66465, #9198e5);
+    .App-body {
+      width: 600px;
+      height: 600px;
+      margin-top: 25px;
     }
+  }
 }
