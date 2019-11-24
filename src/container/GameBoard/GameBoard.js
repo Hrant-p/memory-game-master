@@ -28,7 +28,7 @@ class GameBoard extends Component {
     firstSelectedItem = getCorrectId(firstSelectedItem);
     secondSelectedItem = getCorrectId(secondSelectedItem);
 
-    if (firstSelectedItem === secondSelectedItem) {
+    if (firstSelectedItem && secondSelectedItem && firstSelectedItem === secondSelectedItem) {
       correctMatches.add(firstSelectedItem);
     }
 

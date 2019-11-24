@@ -8,7 +8,7 @@ const GameBoard = lazy(() => import("./container/GameBoard"));
 function App() {
   return (
     <div className="App">
-      <audio src={audio} autoPlay>
+      <audio src={audio} preload="auto" autoPlay>
         <track kind="captions" />
       </audio>
       <div className="App-body">
