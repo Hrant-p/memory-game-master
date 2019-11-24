@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "abb9ee8d1eed28dfd4e54f0021dd41a1",
+    "revision": "194d61ffc411d0f7b9ff979d434e84b7",
     "url": "/memory-game-master/index.html"
   },
   {
-    "revision": "ab72698637061c428db7",
+    "revision": "27be62a8e8bb657b1bfb",
     "url": "/memory-game-master/static/css/3.aadb8a2a.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/memory-game-master/static/js/2.92f6bba7.chunk.js"
   },
   {
-    "revision": "ab72698637061c428db7",
-    "url": "/memory-game-master/static/js/3.8c7d9f4b.chunk.js"
+    "revision": "27be62a8e8bb657b1bfb",
+    "url": "/memory-game-master/static/js/3.0079cb2f.chunk.js"
   },
   {
     "revision": "3014c793c1f9b5da26dc",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/memory-game-master/static/js/main.34642480.chunk.js"
   },
   {
-    "revision": "4ec011c1e5966e95cb3e",
-    "url": "/memory-game-master/static/js/runtime-main.0b6ae6d3.js"
+    "revision": "2c5c3635ae1ecc53f389",
+    "url": "/memory-game-master/static/js/runtime-main.77ed4d82.js"
   },
   {
     "revision": "b6dcde8c6d43fb339da471f5f71b3295",
