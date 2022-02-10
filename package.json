@@ -28,7 +28,7 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.6.0",
     "gh-pages": "^2.1.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "prettier": "^1.17.0"
   },
   "scripts": {
